@@ -20,6 +20,7 @@ const Inventory = () => {
                     )
                 }
             </div>
+
         </div>
     );
 };
