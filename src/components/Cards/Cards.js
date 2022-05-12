@@ -1,9 +1,9 @@
-import React from 'react';
 import useCards from '../../hooks/useCards';
 import Card from '../Card/Card';
 
-const Inventory = () => {
-    const [cards] = useCards([])
+const Cards = () => {
+    const [cards] = useCards([]);
+
     return (
         <div>
             <div className='bg-gray-200 pt-4 py-0'>
@@ -11,7 +11,7 @@ const Inventory = () => {
             </div>
             <div className="grid md:grid-cols-3 sm:grid-cols-1 text-gray-800 font-semibold bg-white">
                 {
-                    cards.map(card => <Card
+                    cards?.slice(0, 6).map(card => <Card
                         key={card.id}
                         card={card}
 
@@ -24,4 +24,4 @@ const Inventory = () => {
     );
 };
 
-export default Inventory;
+export default Cards;

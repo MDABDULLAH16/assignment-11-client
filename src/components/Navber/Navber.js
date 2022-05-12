@@ -27,7 +27,7 @@ const Navber = () => {
                     <CustomLink className=' m-2' to='/' >Home</CustomLink>
                     <CustomLink className=' m-2' to='/inventory' >Inventory</CustomLink>
                     <CustomLink className='m-2' to='/blogs'>Blog</CustomLink>
-                    <CustomLink className=' m-2' to='/about' >About</CustomLink>
+
 
                     {
                         user ? <button onClick={handleSignOut} >SignOut</button> :
