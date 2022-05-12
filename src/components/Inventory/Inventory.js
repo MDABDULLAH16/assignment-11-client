@@ -1,6 +1,6 @@
 import React from 'react';
 import useCards from '../../hooks/useCards';
-import Card from '../Card/Card';
+import InventoryCard from '../InventoryCard/InventoryCard';
 
 const Inventory = () => {
     const [cards] = useCards([])
@@ -11,12 +11,12 @@ const Inventory = () => {
             </div>
             <div className="grid md:grid-cols-3 sm:grid-cols-1 text-gray-800 font-semibold bg-white">
                 {
-                    cards.map(card => <Card
+                    cards.map(card => <InventoryCard
                         key={card.id}
                         card={card}
 
 
-                    ></Card>
+                    ></InventoryCard>
                     )
                 }
             </div>
