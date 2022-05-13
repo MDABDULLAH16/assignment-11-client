@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 
 const InventoryCard = ({ card }) => {
-    const { name, price, dillername, image, discription } = card;
-    const [count, setCount] = useState(23)
+    const { name, price, dillername, quantity, image, discription } = card;
+    const [count, setCount] = useState([quantity])
 
     const handleDelivared = () => {
         const newCount = count - 1;
@@ -12,6 +12,7 @@ const InventoryCard = ({ card }) => {
     }
     const handleAddItem = (event) => {
         event.preventDefault();
+
 
 
     }
@@ -30,8 +31,9 @@ const InventoryCard = ({ card }) => {
     return (
         <div className='bg-gray-200 ' >
             <div className=' border-solid border-2 border-indigo-200 rounded-lg shadow-xl  m-5  bg-white p-2'>
-                <div className='bg-white text-center'>
-                    <img src={image} alt="" />
+                <div className='bg-white text-center mx-auto'>
+                    <img className='mx-auto' src={image} alt="" />
+
                     <h1>Cars Name: {name} </h1>
                     <h2>Price:$ {price}</h2>
                     <p> Quantity: {count}</p>

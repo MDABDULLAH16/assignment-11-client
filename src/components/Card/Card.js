@@ -8,7 +8,7 @@ const Card = ({ card }) => {
         <div className='bg-gray-200 ' >
             <div className=' border-solid border-2 border-indigo-200 rounded-lg shadow-xl  m-5  bg-white p-2'>
                 <div className='bg-white text-center'>
-                    <img src={image} alt="" />
+                    <img className='mx-auto' src={image} alt="" />
                     <h1>Cars Name: {name} </h1>
                     <h2>Price:$ {price}</h2>
                     <p> Quantity: {quantity}</p>
