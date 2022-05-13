@@ -33,6 +33,7 @@ const Navber = () => {
                         user ? <>
                             <CustomLink className='m-2' to='/manageInventory'>Manage Invetory</CustomLink>
                             <CustomLink className='m-2' to='/myItem'>My Item</CustomLink>
+                            <CustomLink className='m-2' to='/addItem' >Add Item</CustomLink>
 
                             <button className='font-semibold' onClick={handleSignOut} >LogOut</button>
 

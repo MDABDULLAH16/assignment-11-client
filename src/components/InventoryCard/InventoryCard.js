@@ -5,26 +5,33 @@ const InventoryCard = ({ card }) => {
     const { name, price, dillername, quantity, image, discription } = card;
     const [count, setCount] = useState([quantity])
 
+
     const handleDelivared = () => {
         const newCount = count - 1;
         setCount(newCount);
 
     }
+    const addItem = (event) => {
+        const newCount = quantity + parseInt(event.target.value);
+        const amount = newCount;
+
+        setCount(amount)
+        event.target.value = '';
+
+    }
+
     const handleAddItem = (event) => {
+
         event.preventDefault();
 
 
 
-    }
-    const addItem = (event) => {
-        const newCount = count;
-        const amount = newCount + parseInt(event.target.value);
-        event.target.value = "";
-        setCount(amount);
 
 
 
     }
+
+
 
 
 
@@ -51,6 +58,7 @@ const InventoryCard = ({ card }) => {
                     </div>
                 </div>
             </div>
+
 
         </div>
     );
