@@ -44,7 +44,7 @@ const InventoryCard = ({ card }) => {
                     <h1>Cars Name: {name} </h1>
                     <h2>Price:$ {price}</h2>
                     <p> Quantity: {count}</p>
-                    <p className='text-semibold'> Diller Name: {dillername}</p>
+                    <p className='text-semibold'> Supplier Name: {dillername}</p>
                     <p className='text-xs'>Discription:{discription}</p>
                     <div>
                         <button onClick={handleDelivared} className='border w-full bg-indigo-600 text-white rounded-md hover:bg-indigo-800 mt-3 font-semibold'>Delivared</button>
