@@ -12,7 +12,7 @@ const Cards = () => {
             <div className="grid md:grid-cols-3 sm:grid-cols-1 text-gray-800 font-semibold bg-white">
                 {
                     cards?.slice(0, 6).map(card => <Card
-                        key={card.id}
+                        key={card._id}
                         card={card}
 
 

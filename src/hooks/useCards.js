@@ -4,7 +4,7 @@ const useCards = () => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        fetch('fakedata.json')
+        fetch('http://localhost:5000/food')
             .then(res => res.json())
             .then(data => setCards(data))
     }, [])
