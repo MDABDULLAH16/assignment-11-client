@@ -21,7 +21,7 @@ const Navber = () => {
             </div>
             <nav className={`bg-indigo-700 w-full md:flex justify-around  font-semibold text-white absolute md:static duration-500 ease-in ${open ? 'top-6' : 'bottom-80'}`}>
                 <div>
-                    <h1 className='md:mx-auto text-xl md:my-3' >Auto Drive</h1>
+                    <h1 className='md:mx-auto text-xl md:my-3' >ARS Vegetable Store</h1>
                 </div>
                 <div className='p-3 md:flex items-end justify-center   '>
                     <CustomLink className=' m-2' to='/' >Home</CustomLink>
