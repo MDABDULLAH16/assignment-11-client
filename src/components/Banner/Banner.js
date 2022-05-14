@@ -29,35 +29,35 @@ const Banner = () => {
                 <div className="carousel-inner relative w-full overflow-hidden">
                     <div className="carousel-item active relative float-left w-full">
                         <img
-                            src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
-                            className="block w-full"
+                            src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6"
+                            className="block h-screen w-full"
                             alt="..."
                         />
                         <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl">First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5 className="text-xl">First Class Foods</h5>
+                            <p>There is Fist class and fresh food stored</p>
                         </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
-                            src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-                            className="block w-full"
+                            src="https://betterme.world/articles/wp-content/uploads/2021/06/shutterstock_390988792.jpg"
+                            className="block h-screen w-full"
                             alt="..."
                         />
                         <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl">Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5 className="text-xl">Green Vegetable</h5>
+                            <p>Most pupuler Green Vegetable stored our store</p>
                         </div>
                     </div>
                     <div className="carousel-item relative float-left w-full">
                         <img
-                            src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
-                            className="block w-full"
+                            src="https://steemitimages.com/1280x0/https://cdn.steemitimages.com/DQmVGhsvyeu7DmfHuqoXinvJgn3xRFV7usZA2aKGQhAEgQ9/image.png"
+                            className="block h-screen w-full"
                             alt="..."
                         />
                         <div className="carousel-caption hidden md:block absolute text-center">
-                            <h5 className="text-xl">Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5 className="text-xl">Local Vegetable</h5>
+                            <p>Local Vegetable is part of our life</p>
                         </div>
                     </div>
                 </div>

@@ -13,14 +13,14 @@ const MannageInventory = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are You Sure ?', id)
         if (proceed) {
-            console.log('delete id', id);
+
             const url = `http://localhost:5000/food/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    setCards(data);
 
                     const remaining = cards.filter(card => card._id !== id)
 
@@ -31,17 +31,17 @@ const MannageInventory = () => {
 
     }
     return (
-        <div>
-            <div className='bg-gray-200 pt-4 py-0'>
+        <div className=' min-h-screen '>
+            <div className=' bg-gray-200 py-4 '>
                 <span className='text-2xl font-bold'>All Item Is Hare!</span>
             </div>
-            <div className="grid md:grid-cols-3 sm:grid-cols-1 text-gray-800 font-semibold bg-white">
+            <div className="grid md:grid-cols-3  sm:grid-cols-1 text-gray-800 font-semibold min-h-screen w-fit bg-white">
                 {
                     cards.map(card => <div
                         key={card._id}
                         card={card} >
                         <div>
-                            <div className='bg-gray-200 ' >
+                            <div className=' ' >
                                 <div className=' border-solid border-2 border-indigo-200 rounded-lg shadow-xl  m-5  bg-white p-2'>
                                     <div className='bg-white text-center mx-auto'>
                                         <img className='mx-auto' src={card.image} alt="" />

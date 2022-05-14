@@ -23,20 +23,9 @@ const InventoryCard = ({ card }) => {
     const handleAddItem = (event) => {
 
         event.preventDefault();
-
-
-
-
-
-
     }
-
-
-
-
-
     return (
-        <div className='bg-gray-200 ' >
+        <div  >
             <div className=' border-solid border-2 border-indigo-200 rounded-lg shadow-xl  m-5  bg-white p-2'>
                 <div className='bg-white text-center mx-auto'>
                     <img className='mx-auto' src={image} alt="" />
