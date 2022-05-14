@@ -65,7 +65,7 @@ const MannageInventory = () => {
 
             </div>
             <div className='bg-black pb-4'>
-                <Link to='/addItem'>  <button className='mt-4 bg-indigo-500 text-white  py-1 px-6 rounded-md hover:bg-indigo-600' type='submit'>Delivered</button></Link>
+                <Link to='/addItem'>  <button className='mt-4 bg-indigo-500 text-white  py-1 px-6 rounded-md hover:bg-indigo-600' type='submit'>Add New Item</button></Link>
             </div>
             <hr />
 
